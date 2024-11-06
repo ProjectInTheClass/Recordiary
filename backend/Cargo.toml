@@ -1,0 +1,14 @@
+[package]
+name = "recordiary"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.7"
+hyper = "1.5.0"
+sqlx = { version = "0.8.2", features = [
+    "runtime-tokio-rustls",
+    "any",
+    "postgres",
+] }
+tokio = { version = "1.41.0", features = ["full"] }
